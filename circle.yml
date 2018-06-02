@@ -1,0 +1,4 @@
+machine:
+
+  environment:
+   CIRCLE_ARTIFACTS: target/surefire-reports/junitreports
