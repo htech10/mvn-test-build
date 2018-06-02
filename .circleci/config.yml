@@ -13,6 +13,8 @@ jobs:
       - checkout
       - run: mvn compile
       - run: mvn test
+      - store_artifacts:
+           path: target/surefire-reports/junitreports/
      
         
     
