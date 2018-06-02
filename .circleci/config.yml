@@ -8,13 +8,13 @@ jobs:
     docker:
       # specify the version you desire here
       - image: circleci/openjdk:8-jdk
-    
+    working_directory: /tmp
     steps:
       - checkout
       - run: mvn compile
       # run tests!
-      - run: mvn test
-      
-      - run: cp target/surefire-reports/index.html $CIRCLE_ARTIFACTS/.
+      - store_artifacts:
+        path: target/surefire-reports/index.html
+        destination: /tmp
         
     
