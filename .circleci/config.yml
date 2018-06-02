@@ -16,7 +16,7 @@ jobs:
       - store_artifacts:
            path: target/surefire-reports/junitreports/
       - store_test_results:
-          path: path: target/surefire-reports/junitreports/
+          path: target/surefire-reports/junitreports/
      
         
     
