@@ -14,8 +14,8 @@ jobs:
       - run: mvn compile
       - run: mvn test
       # run tests!
-      - store_artifacts:
-        path: target/surefire-reports/index.html
-        destination: /tmp
+      #- store_artifacts:
+       # path: target/surefire-reports/index.html
+       # destination: /tmp
         
     
